@@ -490,6 +490,10 @@ template<typename T>
 void set(T a)
 {	
     int choice,n,m,size;
+	cout<<"Enter the size of set : ";
+            cin>>n;
+            cout<<"Enter the size of relation :";
+            cin>>size;
     	cout<<"\t\t 1 for relation on a set "<<endl;
         cout<<"\t\t 2 for reletion between two set "<<endl;
         
@@ -500,10 +504,6 @@ void set(T a)
     {
     	case 1:
         {
-        	cout<<"Enter the size of set : ";
-            cin>>n;
-            cout<<"Enter the size of relation :";
-            cin>>size;
             MyRelation<T> a(n,size);
             a.reflexive();
             a.symmetric();
